@@ -1,0 +1,128 @@
+
+
+php validation
+** https://www.w3schools.com/php/php_form_required.asp
+
+JS validation
+** https://www.w3schools.com/js/js_validation.asp
+
+
+
+*** PAGE STRUCTURE ***
+*Home (default.php)
+*About (about.php)
+*Book Room (book.php)
+
+***Admin (admin.php)
+-> ONLY PERMITTED WITH EMPLOYEE LOGIN
+
+***Profile (profile.php)
+-> ONLY PERMITTED WITH MEMBER LOGIN
+
+*** MODAL FORMS ***
+*contact_modal.php - located in nav
+*register_modal.php -located in nav
+*login_modal.php - located in nav
+*emp_login_modal.php - located in footer
+
+*** DATABASE NAME ***
+*milestoneDB
+
+*** DB TABLES ***
+******************************************************************************
+***                                                                        ***
+***                             MESSAGE TABLE                              ***
+***                                                                        ***
+******************************************************************************
++--------------+---------------+------+-----+---------+----------------+
+| Field        | Type          | Null | Key | Default | Extra          |
++--------------+---------------+------+-----+---------+----------------+
+| msg_id       | int(11)       | NO   | PRI | NULL    | auto_increment |
+| firstname    | varchar(50)   | YES  |     | NULL    |                |
+| lastname     | varchar(50)   | YES  |     | NULL    |                |
+| email        | varchar(75)   | NO   | UNI | NULL    |                |
+| phone        | varchar(10)   | NO   |     | NULL    |                |
+| message_text | varchar(1000) | NO   |     | NULL    |                |
++--------------+---------------+------+-----+---------+----------------+
+
+
+******************************************************************************
+***                                                                        ***
+***                               PARTY TABLE                              ***
+***                                                                        ***
+******************************************************************************
++--------------+--------------+------+-----+---------+-------+
+| Field        | Type         | Null | Key | Default | Extra |
++--------------+--------------+------+-----+---------+-------+
+| email        | varchar(75)  | NO   | PRI |         |       |
+| company_name | varchar(100) | YES  |     | NULL    |       |
+| phone_number | varchar(10)  | NO   |     | NULL    |       |
+| dob_month    | varchar(9)   | YES  |     | NULL    |       |
+| dob_day      | varchar(2)   | YES  |     | NULL    |       |
+| dob_year     | varchar(4)   | YES  |     | NULL    |       |
+| gender       | char(1)      | YES  |     | NULL    |       |
+| ethnicity    | varchar(30)  | YES  |     | NULL    |       |
++--------------+--------------+------+-----+---------+-------+
+
+
+
+******************************************************************************
+***                                                                        ***
+***                            MEMBER TABLE                                ***
+***                                                                        ***
+******************************************************************************
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| id          | int(11)     | NO   | PRI | NULL    | auto_increment |
+| email       | varchar(75) | NO   | UNI | NULL    |                |
+| firstname   | varchar(50) | NO   |     | NULL    |                |
+| lastname    | varchar(50) | NO   |     | NULL    |                |
+| password    | varchar(75) | NO   |     | NULL    |                |
+| suffix      | varchar(4)  | YES  |     | NULL    |                |
+| job_title   | varchar(50) | YES  |     | NULL    |                |
+| work_status | varchar(20) | YES  |     | NULL    |                |
+| education   | varchar(30) | YES  |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
+
+
+******************************************************************************
+***                                                                        ***
+***                          EMPLOYEE TABLE                                ***
+***                                                                        ***
+******************************************************************************
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| work_status | varchar(20) | YES  |     | NULL    |       |
+| job_title   | varchar(50) | YES  |     | NULL    |       |
+| email       | varchar(75) | NO   | PRI | NULL    |       |
+| password    | varchar(75) | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+
+
+******************************************************************************
+***                                                                        ***
+***                           BOOKED TABLE                                 ***
+***                                                                        ***
+******************************************************************************
++------------+---------------+------+-----+---------+-------+
+| Field      | Type          | Null | Key | Default | Extra |
++------------+---------------+------+-----+---------+-------+
+| book_id    | int(11)       | NO   | PRI | NULL    |       |
+| room       | varchar(2)    | NO   |     | NULL    |       |
+| smartboard | char(1)       | YES  |     | NULL    |       |
+| tv         | char(1)       | YES  |     | NULL    |       |
+| projector  | char(1)       | YES  |     | NULL    |       |
+| phone      | char(1)       | YES  |     | NULL    |       |
+| laptop     | char(1)       | YES  |     | NULL    |       |
+| month      | varchar(9)    | NO   |     | NULL    |       |
+| day        | varchar(2)    | NO   |     | NULL    |       |
+| year       | varchar(4)    | NO   |     | NULL    |       |
+| start_time | varchar(3)    | NO   |     | NULL    |       |
+| end_time   | varchar(3)    | NO   |     | NULL    |       |
+| firstname  | varchar(50)   | NO   |     | NULL    |       |
+| lastname   | varchar(50)   | NO   |     | NULL    |       |
+| email      | varchar(75)   | NO   |     | NULL    |       |
+| comments   | varchar(1000) | YES  |     | NULL    |       |
++------------+---------------+------+-----+---------+-------+
