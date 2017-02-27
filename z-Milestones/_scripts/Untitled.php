@@ -8,7 +8,7 @@
     $passHash = hash('sha256', $password);
     
     
-    $sql = "SELECT email, password FROM member WHERE email = $email and password = $passHash;";
+    $sql = "SELECT email, password FROM member WHERE email = '$email' and password = '$passHash';";
     
     $result = $db->query($sql);
     
@@ -20,12 +20,12 @@
         $_SESSION['login'] = $email;
         header("location: ../profile.php");
         
-      } else {?>
-          <script language="javascript" type="text/javascript">
-      			alert('Invalid Email or Password');
-      		  window.location = '/z-Milestones/default.php';
-      		</script>
-      	<?php
+      } else {
+          echo "<script>
+            			alert('Invalid Email or Password');
+            		  window.location = '/z-Milestones/default.php';
+            		</script>";
+      	
       }
         
     } 

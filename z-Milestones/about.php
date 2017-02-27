@@ -18,7 +18,7 @@
 					<p>
 					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel finibus justo, ut convallis nunc. Pellentesque lacinia fermentum sapien, quis porta elit efficitur non. Aliquam aliquam velit lectus, et sagittis sapien sollicitudin vitae. Proin aliquam posuere risus et molestie. Sed viverra convallis lacus, in fringilla ligula condimentum at. Vivamus sagittis a urna a placerat. Ut id tempus orci. Quisque mollis porttitor quam, quis imperdiet metus. Ut accumsan orci nec dolor semper lacinia. Maecenas rutrum finibus libero at luctus.
 					</p>
-					<h2><!--<a href="profile.php">-->Policies<!--</a>--></h2>
+					<h2><a href="profile.php">Policies</a></h2>
 					<p	>
 					 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lobortis lectus orci, non dapibus justo eleifend eget. In semper porttitor laoreet. Pellentesque ac odio tempor, viverra lectus dapibus, faucibus quam. Etiam aliquam elit nec libero aliquam, id aliquam lacus pellentesque. Fusce id venenatis orci, ut sodales justo. Curabitur tincidunt magna mauris, vestibulum gravida orci ultricies sit amet. Vivamus rutrum tellus id felis pulvinar, ac dignissim dui volutpat. Pellentesque tincidunt convallis leo. Etiam sit amet urna mauris. Aenean tincidunt, nunc quis ornare rhoncus, sem nibh rutrum dolor, non viverra lorem nunc in magna. Vivamus augue odio, mattis vel consequat non, egestas non lorem. Cras in odio ipsum. Donec bibendum cursus convallis.
 					 <br /><br />

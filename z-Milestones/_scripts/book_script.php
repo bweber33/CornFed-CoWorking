@@ -85,7 +85,7 @@
     
     
     $sql = "INSERT INTO booked (room, smartboard, tv, projector, phone, laptop, month, day, year, start_time, end_time, firstname, lastname, email, comments) 
-            VALUES ('$room', '$smartboard', '$projector', '$tv', '$phone', '$laptop', '$month', '$day', '$year', '$timeStart', $timeEnd', '$firstname', '$lastname', '$email', '$comments');";
+            VALUES ('$room', '$smartboard', '$projector', '$tv', '$phone', '$laptop', '$month', '$day', '$year', '$timeStart', '$timeEnd', '$firstname', '$lastname', '$email', '$comments');";
 
         if ($db->query($sql) === TRUE) { ?>
             <script language="javascript" type="text/javascript">

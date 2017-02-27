@@ -59,6 +59,9 @@
     }
     //////////////////////////////////////////////////////////////////////////////////////////////
     
+    $work_status = test_input($_POST['reg_emp_status']);
+    
+    
     $month = test_input($_POST["month"]);      
     
     
@@ -66,8 +69,6 @@
     
     
     $year = test_input($_POST["year"]); 
-    
-    $work_status = test_input($_POST['reg_emp_status']);
     
     
   } 

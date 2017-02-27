@@ -8,11 +8,11 @@
     $password = test_input($_POST['emp_password']);
     $remember = test_input($_POST['remember']);
     
-     $sql = "SELECT email, password FROM employee WHERE email = $email and password = $password;";
+     $sql = "SELECT email, password FROM employee WHERE email = '$email' and password = '$password';";
     
     $result = $db->query($sql);
     
-  if ($result->num_rows = 1) {  
+  if ($result->num_rows == 1) {  
         if(isset($_POST['remember'])){
           setcookie('login', $email, time() + (86400 * 7), "/", "", true);
         }
